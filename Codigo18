@@ -1,0 +1,19 @@
+package exemplo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int max = in.nextInt();
+		int i = 0;
+		while (i < max) {
+			if (i % 2 == 1) {
+				System.out.println(i);
+			}
+			i++;
+		}
+		in.close();
+	}
+}
