@@ -1,0 +1,20 @@
+package exemplo;
+
+public class Aviao implements Voador {
+
+	public void voar() {
+		System.out.println("Voando Avião");
+		
+	}
+
+	public void pousar() {
+		System.out.println("Pousando Avião");
+		
+	}
+
+	public void decolar() {
+		System.out.println("Decolando Avião");
+		
+	}
+
+}
