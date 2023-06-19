@@ -1,5 +1,4 @@
 package exemplo;
-
 import java.util.Scanner;
 
 public class Principal {
