@@ -1,0 +1,17 @@
+package exemplo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Integer n1;
+		Scanner in = new Scanner(System.in);
+		n1 = in.nextInt();
+		System.out.println("Decimal:" + n1);
+		System.out.println("Hexadecimal:" + Integer.toHexString(n1).toUpperCase());
+		System.out.println("Octal:" + Integer.toOctalString(n1));
+		System.out.println("Binário:" + Integer.toBinaryString(n1));
+		in.close();
+	}
+}
