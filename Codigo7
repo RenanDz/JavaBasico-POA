@@ -1,0 +1,12 @@
+package exemplo;
+
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Pessoa p1 = new Pessoa("João", "2345", 37);	
+		Pessoa p2 = new Pessoa("Maria","6789", 24);	
+		Pessoa p3 = new Pessoa("Marta", "91011", 23);	
+	
+	}
+}
