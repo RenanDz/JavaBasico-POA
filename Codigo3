@@ -1,0 +1,12 @@
+package exemplo;
+import java.util.Scanner;
+
+public class Principal {
+	public static void main(String[] args) {
+		String nome;
+		Scanner in = new Scanner(System.in);
+		nome = in.nextLine();
+		String[] separa = nome.split(" ");
+		System.out.println(separa[1].toUpperCase() + "," + separa[0]);
+	}
+}
