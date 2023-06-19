@@ -1,0 +1,19 @@
+package exemplo;
+
+public class Helicoptero implements Voador {
+
+	public void voar() {
+		System.out.println("Voando Helicóptero");
+
+	}
+
+	public void pousar() {
+		System.out.println("Pousando Helicóptero");
+
+	}
+
+	public void decolar() {
+		System.out.println("Decolando Helicóptero");
+
+	}
+}
