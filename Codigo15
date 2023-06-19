@@ -1,0 +1,25 @@
+package exemplo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		float preco;
+		int quant;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Digite o Preço:");
+		preco = in.nextFloat();
+		System.out.println("Digite a Quantidade");
+		quant = in.nextInt();
+		if (preco >= 500 && quant < 100) {
+			System.out.println("Categoria A");
+		} else if (preco >= 1000) {
+			System.out.println("Categoria B");
+		} else {
+			System.out.println("Categoria C");
+		}
+		in.close();
+	}
+}
+
