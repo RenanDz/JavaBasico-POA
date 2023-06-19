@@ -1,0 +1,24 @@
+package exemplo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		int op;
+		String opcao = "";
+		Scanner in = new Scanner(System.in);
+		op = in.nextInt();
+		switch (op) {
+		case 1:
+			opcao = "Opção 1";
+			break;
+		case 2:
+			opcao = "Opção 2";
+			break;
+		default:
+			System.out.println("Opção Invalida!");
+		}
+		System.out.println(opcao);
+	}
+}
