@@ -1,0 +1,31 @@
+package exemplo;
+
+import java.util.Scanner;
+
+public class Matriz {
+	public int[][] mat;
+	public int ordem;
+	
+	public Matriz (int ordem) {
+		this.ordem = ordem;
+		mat = new int[ordem][ordem];
+	}
+
+	public void impMatriz() {
+		for (int i = 0; i < ordem; i++) {
+			for (int j = 0; j < ordem; j++) {
+				System.out.println(mat[i][j]);
+			}
+		}
+	}
+	
+	public void leMatriz() {
+		Scanner in = new Scanner(System.in);
+		for (int i = 0; i < ordem; i++) {
+			for (int j = 0; j < ordem; j++) {
+				mat[i][j] = in.nextInt();
+			}
+		}
+		in.close();
+	}
+}
