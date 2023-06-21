@@ -1,0 +1,23 @@
+package exemplo;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		FileWriter fw;
+		try {
+			fw = new FileWriter("c:/teste/log.txt");
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write("Faculdade");
+			bw.newLine();
+			bw.close();
+			fw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+}
