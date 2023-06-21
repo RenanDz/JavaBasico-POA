@@ -1,0 +1,22 @@
+package exemplo;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		try {
+			Scanner in = new Scanner(System.in);
+			int n1 = in.nextInt();
+			int n2 = in.nextInt();
+			int res = n1 / n2;
+			System.out.println(res);
+			in.close();
+		} catch (Exception e) {
+			System.err.println("Exceção");
+			e.printStackTrace();
+		} finally {
+			System.out.println("Irá Rodar");
+		}
+	}
+}
