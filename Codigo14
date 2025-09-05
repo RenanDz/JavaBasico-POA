@@ -4,18 +4,43 @@ import java.util.Scanner;
 
 public class Principal {
 
-	public static void main(String[] args) {
-		float n1, n2, media;
-		Scanner in = new Scanner(System.in);
-		n1 = in.nextFloat();
-		n2 = in.nextFloat();
-		media = (n1 + n2) / 2;
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
 
-		if (media >= 7) {
-			System.out.println("Aprovado");
-		} else {
-			System.out.println("Prova Final");
-		}
+        double n1 = lerNota(in, "Digite a primeira nota: ");
+        double n2 = lerNota(in, "Digite a segunda nota: ");
 
-	}
+        double media = calcularMedia(n1, n2);
+        exibirResultado(media);
+
+        in.close();
+    }
+
+    // Validando 
+    private static double lerNota(Scanner in, String mensagem) {
+        double nota;
+        while (true) {
+            System.out.print(mensagem);
+            nota = in.nextDouble();
+            if (nota >= 0 && nota <= 10) {
+                return nota;
+            }
+            System.out.println("Nota inválida! Digite um valor entre 0 e 10.");
+        }
+    }
+
+    // Calculando média
+    private static double calcularMedia(double n1, double n2) {
+        return (n1 + n2) / 2.0;
+    }
+
+    // Exibindo resultado
+    private static void exibirResultado(double media) {
+        System.out.printf("Média: %.2f%n", media);
+        if (media >= 7) {
+            System.out.println("✅ Aprovado");
+        } else {
+            System.out.println("📘 Prova Final");
+        }
+    }
 }
