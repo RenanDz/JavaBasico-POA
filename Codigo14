@@ -38,9 +38,9 @@ public class Principal {
     private static void exibirResultado(double media) {
         System.out.printf("Média: %.2f%n", media);
         if (media >= 7) {
-            System.out.println("✅ Aprovado");
+            System.out.println("Aprovado");
         } else {
-            System.out.println("📘 Prova Final");
+            System.out.println("Prova Final");
         }
     }
 }
